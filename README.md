@@ -12,11 +12,6 @@ matrículas, pagamentos e acessos até a Terceira Forma Normal (3FN).
 ## Como executar
 Execute os arquivos, nesta ordem, em uma conexão PostgreSQL:
 
-1. `sql/01_estrutura_antiga.sql`
-2. `sql/02_novo_modelo.sql`
-3. `sql/03_migracao_dados.sql`
-4. `sql/04_testes_qualidade.sql`
-
 Os scripts criam e utilizam o schema `academia`.
 
 ## Resultados esperados dos dados de exemplo
