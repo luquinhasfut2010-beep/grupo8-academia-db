@@ -8,9 +8,20 @@ matrículas, pagamentos e acessos até a Terceira Forma Normal (3FN).
 
 ## Tecnologia
 - PostgreSQL
-  
+
+## Estrutura
+- `sql/01_estrutura_antiga.sql`: cria a tabela legada e insere 10 registros de exemplo.
+- `sql/02_novo_modelo.sql`: cria as cinco tabelas normalizadas e os índices.
+- `sql/03_migracao_dados.sql`: transfere os dados do legado para o novo modelo.
+- `sql/04_testes_qualidade.sql`: executa consultas de verificação e testes de restrições.
+
 ## Como executar
 Execute os arquivos, nesta ordem, em uma conexão PostgreSQL:
+
+1. `sql/01_estrutura_antiga.sql`
+2. `sql/02_novo_modelo.sql`
+3. `sql/03_migracao_dados.sql`
+4. `sql/04_testes_qualidade.sql`
 
 Os scripts criam e utilizam o schema `academia`.
 
